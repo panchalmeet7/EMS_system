@@ -42,6 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textemployeemonumber = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtemployeeid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeedataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,7 +146,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(397, 94);
+            this.label5.Location = new System.Drawing.Point(41, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 23);
             this.label5.TabIndex = 14;
@@ -152,10 +154,27 @@
             // 
             // textemployeemonumber
             // 
-            this.textemployeemonumber.Location = new System.Drawing.Point(532, 91);
+            this.textemployeemonumber.Location = new System.Drawing.Point(186, 144);
             this.textemployeemonumber.Name = "textemployeemonumber";
             this.textemployeemonumber.Size = new System.Drawing.Size(182, 30);
             this.textemployeemonumber.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(409, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "ID Number";
+            // 
+            // txtemployeeid
+            // 
+            this.txtemployeeid.Location = new System.Drawing.Point(532, 91);
+            this.txtemployeeid.Name = "txtemployeeid";
+            this.txtemployeeid.Size = new System.Drawing.Size(182, 30);
+            this.txtemployeeid.TabIndex = 17;
+            this.txtemployeeid.TextChanged += new System.EventHandler(this.txtemployeeid_TextChanged);
             // 
             // Form1
             // 
@@ -163,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(751, 463);
+            this.Controls.Add(this.txtemployeeid);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textemployeemonumber);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -205,5 +226,7 @@
         private Label label4;
         private Label label5;
         private TextBox textemployeemonumber;
+        private Label label1;
+        private TextBox txtemployeeid;
     }
 }
