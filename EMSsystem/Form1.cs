@@ -85,6 +85,9 @@ namespace EMSsystem
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-EVP7VR3;Initial Catalog=EMSdatabase;Integrated Security=True");
                 SqlCommand cmd = new SqlCommand("INSERT INTO EmployeeTb (Name, Technology , RollNumber, Address,Mobile) VALUES ('"+txtemployeename.Text+"', '"+txtemployeetech.Text+"', '"+ txtemployeeaddress.Text+"' ,'"+txtemployeeid.Text+"', '"+textemployeemonumber.Text+"')", con);
                 cmd.CommandType = CommandType.Text;
+
+
+                
                 //cmd.Parameters.AddWithValue("name", TextBox1.Text);
                 //cmd.Parameters.AddWithValue("email", TextBox2.Text);
                 //cmd.Parameters.AddWithValue("education", TextBox3.Text);
